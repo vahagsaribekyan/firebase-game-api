@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "eecdae08-f26e-41ae-95f7-1255b859584c",
+		"name": "FirebaseProject",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "RequestUser",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"user1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://us-central1-test-game-project-d65e8.cloudfunctions.net/requestUser",
+					"protocol": "http",
+					"host": [
+						"us-central1-test-game-project-d65e8",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"requestUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateUser",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"user1\",\n    \"score\": 5,\n    \"game_count\": 9,\n    \"coins_left\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
